@@ -8,7 +8,7 @@ def pFactors(n):
         for check in range(2, int(math.sqrt(n)+1)): 
              while n % check == 0: 
                 pFact.append(check) 
-                n /= check 
+                n //= check 
         if n > 1: 
           pFact.append(n) 
         return pFact
